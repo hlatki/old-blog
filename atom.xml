@@ -4,7 +4,7 @@
   <title><![CDATA[What's Happening, Hannah?]]></title>
   <link href="http://hlatki.github.com/atom.xml" rel="self"/>
   <link href="http://hlatki.github.com/"/>
-  <updated>2013-04-13T16:22:29-04:00</updated>
+  <updated>2013-04-13T16:27:28-04:00</updated>
   <id>http://hlatki.github.com/</id>
   <author>
     <name><![CDATA[Hannah Atkinson]]></name>
@@ -18,7 +18,7 @@
     <link href="http://hlatki.github.com/blog/2013/04/13/nodewar-and-coffeescript/"/>
     <updated>2013-04-13T14:55:00-04:00</updated>
     <id>http://hlatki.github.com/blog/2013/04/13/nodewar-and-coffeescript</id>
-    <content type="html"><![CDATA[<p>A few days ago there was a <a href="https://news.ycombinator.com/item?id=5532360">post on Hacker News</a> about a new site called <a href="nodewar.com">Nodewar</a> where you program little fleets of JavaScript powered space bots and battle other programmers for a 10 bitcoin prize.  The battles take place in an arena containing three unstable moons that will devour unwary ships, not to mention the opposition fleet laying in wait behind them.  Each fleet consists of a queen ship and several drones.  Combat happens by slamming your ships into the opposition &#8211; if they impact properly, the enemy ship will split into two pieces, the smaller of which becomes one of your ships.</p>
+    <content type="html"><![CDATA[<p>A few days ago there was a <a href="https://news.ycombinator.com/item?id=5532360">post on Hacker News</a> about a new site called <a href="http://nodewar.com">Nodewar</a> where you program little fleets of JavaScript powered space bots and battle other programmers for a 10 bitcoin prize.  The battles take place in an arena containing three unstable moons that will devour unwary ships, not to mention the opposition fleet laying in wait behind them.  Each fleet consists of a queen ship and several drones.  Combat happens by slamming your ships into the opposition &#8211; if they impact properly, the enemy ship will split into two pieces, the smaller of which becomes one of your ships.</p>
 
 <p>One of the owners of the site wrote one of the initially successfully teams, <a href="http://nodewar.com/the/spinara">The Spinara</a>. They try to fly away from all threats (some categories like the dread moons are given a larger weight, and thus more leeway).  This rudimentary navigation system seems to be the basis for many of top teams.  I based my first attempt, <a href="http://nodewar.com/the/flailbeans">The FlailBeans</a>, on a descendent of The Spinara called <a href="http://nodewar.com/the/ripoffs">The Ripoffs</a> whose primary innovations were to change the weighting such that the enemy queen is targeted and to introduce an aggressiveness factor.  My chief &#8220;improvement&#8221; was reading the docs and noticing that smaller ships are faster, so I thought I would try to make these speedy little splinters into divebombers.  To do this, I multiplied the aggressiveness constant by the inverse of a ship&#8217;s weight.  This seems to be working reasonably well, although I doubt that the FlailBeans will continue to be ranked so highly since they still use the standard simple targeting method and so have a tendency to miss the queen and careen off the map.  Ideally, I would like my ships to curve around the edge of the map and dive down onto the enemy queen and force it off the map via an improved targeting mechanism, but I think I&#8217;ll have to leave that endeavor to those who have a firmer grasp of physics.</p>
 
